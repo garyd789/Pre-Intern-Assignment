@@ -27,6 +27,7 @@ ul {
   background-repeat: no-repeat !important;
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
   height: 100vh;
   width: 100%;
   position: relative;
