@@ -1,7 +1,7 @@
 :root {
     --green: #00FF00;
     --white: #ffffff;
-    --black: #000000;
+    --blue: #154285;
   }
 * {
     color: var(--fontColor);
@@ -16,17 +16,191 @@ ul {
 }
   
 .dark-theme {
-    --bg: var(--black);
+    --bg: var(--blue);
     --fontColor: var(--white);
     --btnBg: var(--white);
-    --btnFontColor: var(--black);
+    --btnFontColor: var(--blue);
   }
-.songTab {
-    border: 1px solid rgb(255, 255, 255) ;
-    width: 5000px ;
-    height: 50px ;
+
+.bg {
+  background-image: url(https://fanpad.xyz/img/bg.png);
+  background-repeat: no-repeat !important;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  padding-top: 20px;
 }
-span{
-    background: white;
-    border: 1px solid black;
+#msg {
+  text-decoration: underline;
+}
+.logo {
+  height: 40px;
+  width: 150px;
+  
+  position: relative;
+}
+
+.logoicon {
+  height: 30px;
+  width: 30px;
+  position:relative; top: -5px;
+  animation-duration: 15s;
+  animation-name: rotation;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+
+}
+@keyframes rotation {
+  from {
+      transform: rotate(0deg);
+  }
+
+  to {
+      transform: rotate(360deg);
+  }
+}
+
+h2 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.row {
+  padding: 15px;
+  display: grid;
+  grid-template-columns: none;
+  grid-template-rows: [firstrow] 25% [secondrow] 25%;
+
+
+    
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: [index] 16px [image] 80px [info] 40% [timestamp] 30% [links] 30%;
+  grid-template-rows: [firstrow] 25% [secondrow] 25%;
+  column-gap: 16px;
+  padding-left: 30px;
+
+}
+
+.gridcell-1 {
+  display:flex;
+}
+.header {
+  font-size: 13px;
+  color: lightgray;
+  text-decoration: underline;
+
+}
+.index {
+  float:left;
+  text-align: center;
+  position:relative; top: 27px;
+}
+.noimage {
+  border-radius: 7px;
+  height: 70px;
+  width: 70px;
+  justify-content: center;
+  align-items: center;
+}
+.song {
+  justify-self: start;
+  font-size: 15px;
+  position:relative; top: 15px;
+
+}
+.artist {
+    width: 100% ;
+    height: 50px ;
+    font-size: 13px;
+    position:relative; top: 15px;
+}
+.timestamp {
+  position:relative; top: 15px;
+}
+
+.status {
+  position:relative; top: 15px;
+}
+
+/*
+STYLING FOR POP-UP FORM
+*/
+* {
+  box-sizing: border-box;
+}
+h3 {
+  color:#000000;
+}
+strong{
+  color:#000000;
+}
+bold {
+  font-weight: 1000;
+}
+.openBtn {
+  display: flex;
+  justify-content: left;
+}
+.openButton {
+  border: none;
+  border-radius: 5px;
+  background-color: #000000;
+  color: rgb(255, 255, 255);
+  padding: 14px 20px;
+  cursor: pointer;
+  position: relative;
+}
+.loginPopup {
+  position: relative;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+}
+.formPopup {
+  display: none;
+  justify-content: center;
+  position: fixed;
+  left: 50%;
+  top: 5%;
+  transform: translate(-50%, 5%);
+  border: 3px solid #999999;
+  z-index: 9;
+}
+.formContainer {
+  max-width: 300px;
+  padding: 20px;
+  background-color: #fff;
+}
+.formContainer input[type=text],
+.formContainer input[type=password] {
+  color:rgb(0, 0, 0);
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 15px 0;
+  border: none;
+  background: rgba(238, 238, 238, 0.34);
+}
+.formContainer input[type=text]:focus,
+.formContainer input[type=password]:focus {
+  background-color: rgba(255, 255, 255, 0.323);
+  outline: none;
+}
+.formContainer .btn {
+  padding: 12px 20px;
+  border: none;
+  background-color: #8ebf42;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 15px;
+  opacity: 0.8;
+}
+.formContainer .cancel {
+  background-color: #cc0000;
+}
+.formContainer .btn:hover,
+.openButton:hover {
+  opacity: 1;
 }

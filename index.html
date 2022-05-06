@@ -7,16 +7,939 @@
     <title>Dr. Fresch - Caller ID 021</title>
         <link rel="stylesheet" href="main.css">
 </head>
-<body class="dark-theme">
-    <h1>DJ Fresch - Caller ID 021</h1>
-    <p id="'msg">Tracklist:</p>
-    <table id="my-table">
-        <tr><td class = "songTab"> <p id="Aikers"></p> </td></tr>
-        <tr><td class = "songTab"> <p id="HiJack"></p> </td></tr>
-        <tr><td class = "songTab"> <p id="Don Parmesan"></p></td></tr>
-        <tr><td class = "songTab"> <p id="HYPDELIC & Netwerk"></p></td></tr>
-      </table>
-    <script src="songTab.js"></script>
-    <noscript>You need to enable JavaScript to view the full site.</noscript>
+<body class="bg">
+    
+    <title>FanPad</title>
+    <h1><img class="logo" src="https://fanpad.xyz/img/logo-white-text.webp"> <img class="logoicon" src="https://fanpad.xyz/img/logo-white-image.webp"></h1>
+    
+    <h2>DJ Fresch - Caller ID 021</h2>
+
+    <p id="msg">Tracklist:</p>
+    <div class="rows">
+        <!--Titles-->
+        <div class="grid-container">
+            <div class="gridcell-1">
+            </div>
+            <div class="gridcell-2">
+            </div>
+            <div class="gridcell-3">
+                <div class="header">Title/Artist</div>
+
+            </div>
+            <div class="gridcell-4">
+                <div class="header">Timestamp</div>
+            </div>
+            <div class="gridcell-5">
+                <div class="header">Status</div>
+            </div>
+        </div>
+        <!--aikers-->
+        <div class="grid-container">
+            <div class="gridcell-1">
+                <div class="index">1</div>
+            </div>
+            <div class="gridcell-2">
+                <img class="noimage" src="https://cdn.1001.tl/images/artworks/default_100.png" alt="no image">
+            </div>
+            <div class="gridcell-3">
+                <div class="song">unknown</div>
+                <div class="artist">aikers</div>
+            </div>
+            <div class="gridcell-4">
+                <div class="timestamp">0:00</div>
+            </div>
+            <div class="gridcell-5">
+                <div class="status">
+                    <div class="openBtn">
+                        <button class="openButton" onclick="openForm()"><bold>Notify Me</bold></button>
+                      </div>
+                      <div class="loginPopup">
+                        <div class="formPopup" id="popupForm">
+                          <form action="/action_page.php" class="formContainer">
+                            <h3>Contact Information</h3>
+                            <label for="name">
+                                <strong>Name</strong>
+                            </label>
+                            <input type="text" id="name" placeholder="Your Name" name="name" required>
+                            <label for="email">
+                              <strong>E-mail</strong>
+                            </label>
+                            <input type="text" id="email" placeholder="Your Email" name="email" required>
+                            <label for="number">
+                                <strong>Number</strong>
+                            </label>
+                            <input type="text" id="number" placeholder="Your Number" name="number" required>
+                            <button type="submit" class="btn">Submit</button>
+                            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                          </form>
+                        </div>
+                      </div>
+                      <script>
+                        function openForm() {
+                          document.getElementById("popupForm").style.display = "block";
+                        }
+                        function closeForm() {
+                          document.getElementById("popupForm").style.display = "none";
+                        }
+                      </script>
+                
+                </div>
+            </div>
+        </div>
+        <!--Hijack-->
+        <div class="grid-container">
+            <div class="gridcell-1">
+                <div class="index">2</div>
+            </div>
+            <div class="gridcell-2">
+                <img class="noimage" src="https://cdn.1001.tl/images/artworks/default_100.png" alt="no image">
+            </div>
+            <div class="gridcell-3">
+                <div class="song">unknown</div>
+                <div class="artist">Hijack</div>
+            </div>
+            <div class="gridcell-4">
+                <div class="timestamp">1:30</div>
+            </div>
+            <div class="gridcell-5">
+                <div class="status">
+                    <div class="openBtn">
+                        <button class="openButton" onclick="openForm()"><bold>Notify Me</bold></button>
+                      </div>
+                      <div class="loginPopup">
+                        <div class="formPopup" id="popupForm">
+                          <form action="/action_page.php" class="formContainer">
+                            <h3>Contact Information</h3>
+                            <label for="name">
+                                <strong>Name</strong>
+                            </label>
+                            <input type="text" id="name" placeholder="Your Name" name="name" required>
+                            <label for="email">
+                              <strong>E-mail</strong>
+                            </label>
+                            <input type="text" id="email" placeholder="Your Email" name="email" required>
+                            <label for="number">
+                                <strong>Number</strong>
+                            </label>
+                            <input type="text" id="number" placeholder="Your Number" name="number" required>
+                            <button type="submit" class="btn">Submit</button>
+                            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                          </form>
+                        </div>
+                      </div>
+                      <script>
+                        function openForm() {
+                          document.getElementById("popupForm").style.display = "block";
+                        }
+                        function closeForm() {
+                          document.getElementById("popupForm").style.display = "none";
+                        }
+                      </script>
+                    
+                </div>
+            </div>
+        </div>
+        <!--Don Parmesan-->
+        <div class="grid-container">
+            <div class="gridcell-1">
+                <div class="index">3</div>
+            </div>
+            <div class="gridcell-2">
+                <img class="noimage" src="https://cdn.1001.tl/images/artworks/default_100.png" alt="no image">
+            </div>
+            <div class="gridcell-3">
+                <div class="song">unknown</div>
+                <div class="artist">Don Parmesan</div>
+            </div>
+            <div class="gridcell-4">
+                <div class="timestamp">2:40</div>
+            </div>
+            <div class="gridcell-5">
+                <div class="status">
+                    <div class="openBtn">
+                        <button class="openButton" onclick="openForm()"><bold>Notify Me</bold></button>
+                      </div>
+                      <div class="loginPopup">
+                        <div class="formPopup" id="popupForm">
+                          <form action="/action_page.php" class="formContainer">
+                            <h3>Contact Information</h3>
+                            <label for="name">
+                                <strong>Name</strong>
+                            </label>
+                            <input type="text" id="name" placeholder="Your Name" name="name" required>
+                            <label for="email">
+                              <strong>E-mail</strong>
+                            </label>
+                            <input type="text" id="email" placeholder="Your Email" name="email" required>
+                            <label for="number">
+                                <strong>Number</strong>
+                            </label>
+                            <input type="text" id="number" placeholder="Your Number" name="number" required>
+                            <button type="submit" class="btn">Submit</button>
+                            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                          </form>
+                        </div>
+                      </div>
+                      <script>
+                        function openForm() {
+                          document.getElementById("popupForm").style.display = "block";
+                        }
+                        function closeForm() {
+                          document.getElementById("popupForm").style.display = "none";
+                        }
+                      </script>
+                </div>
+            </div>
+        </div>
+        <!--HYPEDELIC & Netwerk-->
+        <div class="grid-container">
+            <div class="gridcell-1">
+                <div class="index">4</div>
+            </div>
+            <div class="gridcell-2">
+                <img class="noimage" src="https://cdn.1001.tl/images/artworks/default_100.png" alt="no image">
+            </div>
+            <div class="gridcell-3">
+                <div class="song">unknown</div>
+                <div class="artist">HYPEDELIC & Netwerk</div>
+            </div>
+            <div class="gridcell-4">
+                <div class="timestamp">3:50</div>
+            </div>
+            <div class="gridcell-5">
+                <div class="status">
+                    <div class="openBtn">
+                        <button class="openButton" onclick="openForm()"><bold>Notify Me</bold></button>
+                      </div>
+                      <div class="loginPopup">
+                        <div class="formPopup" id="popupForm">
+                          <form action="/action_page.php" class="formContainer">
+                            <h3>Contact Information</h3>
+                            <label for="name">
+                                <strong>Name</strong>
+                            </label>
+                            <input type="text" id="name" placeholder="Your Name" name="name" required>
+                            <label for="email">
+                              <strong>E-mail</strong>
+                            </label>
+                            <input type="text" id="email" placeholder="Your Email" name="email" required>
+                            <label for="number">
+                                <strong>Number</strong>
+                            </label>
+                            <input type="text" id="number" placeholder="Your Number" name="number" required>
+                            <button type="submit" class="btn">Submit</button>
+                            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                          </form>
+                        </div>
+                      </div>
+                      <script>
+                        function openForm() {
+                          document.getElementById("popupForm").style.display = "block";
+                        }
+                        function closeForm() {
+                          document.getElementById("popupForm").style.display = "none";
+                        }
+                      </script>
+                </div>
+            </div>
+        </div>
+        <!--SUBSHIFT & Hooders-->
+        <div class="grid-container">
+            <div class="gridcell-1">
+                <div class="index">5</div>
+            </div>
+            <div class="gridcell-2">
+                <img class="noimage" src="https://cdn.1001.tl/images/artworks/labels/2/b/0/f/210405-artwork-generation-hex-606b12af4ee3d-Small.png" alt="GENERATION HEX">
+            </div>
+            <div class="gridcell-3">
+                <div class="song">Furious! [GENERATION HEX]</div>
+                <div class="artist">Hijack</div>
+            </div>
+            <div class="gridcell-4">
+                <div class="timestamp">4:40</div>
+            </div>
+            <div class="gridcell-5">
+                <div class="status">released</div>
+            </div>
+        </div>
+        <!--Amstar-->
+        <div class="grid-container">
+            <div class="gridcell-1">
+                <div class="index">6</div>
+            </div>
+            <div class="gridcell-2">
+                <img class="noimage" src="https://cdn.1001.tl/images/artworks/default_100.png" alt="no image">
+            </div>
+            <div class="gridcell-3">
+                <div class="song">unknown</div>
+                <div class="artist">Amstar</div>
+            </div>
+            <div class="gridcell-4">
+                <div class="timestamp">5:40</div>
+            </div>
+            <div class="gridcell-5">
+                <div class="status">unreleased</div>
+            </div>
+        </div>
+        <!--1997 & ANDRSN ft. Whiskey Pete-->
+        <div class="grid-container">
+            <div class="gridcell-1">
+                <div class="index">7</div>
+            </div>
+            <div class="gridcell-2">
+                <img class="noimage" src="https://cdn.1001.tl/images/artworks/default_100.png" alt="no image">
+            </div>
+            <div class="gridcell-3">
+                <div class="song">unknown</div>
+                <div class="artist">1997 & ANDRSN ft. Whiskey Pete</div>
+            </div>
+            <div class="gridcell-4">
+                <div class="timestamp">7:10</div>
+            </div>
+            <div class="gridcell-5">
+                <div class="status">unreleased</div>
+            </div>
+        </div>
+        <!--Arc Nade & Dynascope-->
+        <div class="grid-container">
+            <div class="gridcell-1">
+                <div class="index">8</div>
+            </div>
+            <div class="gridcell-2">
+                <img class="noimage" src="https://geo-media.beatport.com/image_size/300x300/f3aa8c5d-b380-4a1e-ad93-8d49c6241825.jpg" alt="One For The">
+            </div>
+            <div class="gridcell-3">
+                <div class="song">One For THE [CRUCAST]</div>
+                <div class="artist">Arc Nade & Dynascope</div>
+            </div>
+            <div class="gridcell-4">
+                <div class="timestamp">8:40</div>
+            </div>
+            <div class="gridcell-5">
+                <div class="status">released</div>
+            </div>
+        </div>
+        <!--Belcastro-->
+        <div class="grid-container">
+        <div class="gridcell-1">
+            <div class="index">9</div>
+        </div>
+        <div class="gridcell-2">
+            <img class="noimage" src="https://cdn.1001.tl/images/artworks/default_100.png" alt="uknown">
+        </div>
+        <div class="gridcell-3">
+            <div class="song">unknown</div>
+            <div class="artist">Belcastro</div>
+        </div>
+        <div class="gridcell-4">
+            <div class="timestamp">9:50</div>
+        </div>
+        <div class="gridcell-5">
+            <div class="status">unreleased</div>
+        </div>
+        </div>
+        <!--Case of The Mondays-->
+        <div class="grid-container">
+            <div class="gridcell-1">
+                <div class="index">10</div>
+             </div>
+            <div class="gridcell-2">
+                <img class="noimage" src="https://cdn.1001.tl/images/artworks/default_100.png" alt="no image">
+            </div>
+            <div class="gridcell-3">
+                <div class="song">unknown</div>
+                <div class="artist">Case of The Mondays</div>
+             </div>
+            <div class="gridcell-4">
+                <div class="timestamp">11:40</div>
+            </div>
+            <div class="gridcell-5">
+                <div class="status">unreleased</div>
+            </div>
+        </div>
+        <!--Collelo-->
+        <div class="grid-container">
+        <div class="gridcell-1">
+            <div class="index">11</div>
+        </div>
+        <div class="gridcell-2">
+            <img class="noimage" src="https://cdn.1001.tl/images/artworks/default_100.png" alt="no image">
+        </div>
+        <div class="gridcell-3">
+            <div class="song">unknown</div>
+            <div class="artist">Collelo</div>
+        </div>
+        <div class="gridcell-4">
+            <div class="timestamp">13:00</div>
+        </div>
+        <div class="gridcell-5">
+            <div class="status">unreleased</div>
+        </div>
+        </div>
+        <!--DYCE & BVRNN & ALLIESUN-->
+        <div class="grid-container">
+            <div class="gridcell-1">
+                <div class="index">12</div>
+            </div>
+            <div class="gridcell-2">
+                <img class="noimage" src="https://cdn.1001.tl/images/artworks/default_100.png" alt="no image">
+            </div>
+            <div class="gridcell-3">
+                <div class="song">unknown</div>
+                <div class="artist">DYCE & BVRNN & ALLIESUN</div>
+            </div>
+            <div class="gridcell-4">
+                <div class="timestamp">14:20</div>
+            </div>
+            <div class="gridcell-5">
+                <div class="status">unreleased</div>
+            </div>
+        </div>
+        <!--Liam V-->
+        <div class="grid-container">
+            <div class="gridcell-1">
+                <div class="index">13</div>
+            </div>
+            <div class="gridcell-2">
+                <img class="noimage" src="https://cdn.1001.tl/images/artworks/default_100.png" alt="no image">
+            </div>
+            <div class="gridcell-3">
+                <div class="song">unknown</div>
+                <div class="artist">Liam V</div>
+            </div>
+            <div class="gridcell-4">
+                <div class="timestamp">15:40</div>
+            </div>
+            <div class="gridcell-5">
+                <div class="status">unreleased</div>
+            </div>
+        </div>
+        <!--Neziel-->
+        <div class="grid-container">
+            <div class="gridcell-1">
+                <div class="index">14</div>
+            </div>
+            <div class="gridcell-2">
+                <img class="noimage" src="https://cdn.1001.tl/images/artworks/default_100.png" alt="no image">
+            </div>
+            <div class="gridcell-3">
+                <div class="song">unknown</div>
+                <div class="artist">Neziel</div>
+            </div>
+            <div class="gridcell-4">
+                <div class="timestamp">16:50</div>
+            </div>
+            <div class="gridcell-5">
+                <div class="status">unreleased</div>
+            </div>
+        </div>
+        <!--TCHDWN-->
+        <div class="grid-container">
+            <div class="gridcell-1">
+                <div class="index">15</div>
+            </div>
+            <div class="gridcell-2">
+                <img class="noimage" src="https://cdn.1001.tl/images/artworks/default_100.png" alt="no image">
+            </div>
+            <div class="gridcell-3">
+                <div class="song">unknown</div>
+                <div class="artist">TCHDWN</div>
+            </div>
+            <div class="gridcell-4">
+                <div class="timestamp">18:00</div>
+            </div>
+            <div class="gridcell-5">
+                <div class="status">unreleased</div>
+            </div>
+        </div>
+        <!--Dashi-->
+        <div class="grid-container">
+            <div class="gridcell-1">
+                <div class="index">16</div>
+            </div>
+            <div class="gridcell-2">
+                <img class="noimage" src="https://cdn.1001.tl/images/artworks/default_100.png" alt="no image">
+            </div>
+            <div class="gridcell-3">
+                <div class="song">unknown</div>
+                <div class="artist">Dashi</div>
+            </div>
+            <div class="gridcell-4">
+                <div class="timestamp">21:10</div>
+            </div>
+            <div class="gridcell-5">
+                <div class="status">unreleased</div>
+            </div>
+        </div>
+        <!--ONI-->
+        <div class="grid-container">
+            <div class="gridcell-1">
+                <div class="index">17</div>
+            </div>
+            <div class="gridcell-2">
+                <img class="noimage" src="https://cdn.1001.tl/images/artworks/default_100.png" alt="no image">
+            </div>
+            <div class="gridcell-3">
+                <div class="song">unknown</div>
+                <div class="artist">ONI</div>
+            </div>
+            <div class="gridcell-4">
+                <div class="timestamp">22:30</div>
+            </div>
+            <div class="gridcell-5">
+                <div class="status">unreleased</div>
+            </div>
+        </div>
+        <!--Shadow Child ft. Tymer-->
+        <div class="grid-container">
+            <div class="gridcell-1">
+                <div class="index">18</div>
+            </div>
+            <div class="gridcell-2">
+                <img class="noimage" src="https://geo-media.beatport.com/image_size/300x300/741b30b3-453d-496d-aa62-c40fb1e3ba78.jpg" alt="Shadow Child">
+            </div>
+            <div class="gridcell-3">
+                <div class="song">23 (Mickey Palermo Edit) [FOOD MUSIC]</div>
+                <div class="artist">Shadow Child ft. Tymer</div>
+            </div>
+            <div class="gridcell-4">
+                <div class="timestamp">24:00</div>
+            </div>
+            <div class="gridcell-5">
+                <div class="status">released</div>
+            </div>
+        </div>
+        <!--Tan House-->
+        <div class="grid-container">
+            <div class="gridcell-1">
+                <div class="index">19</div>
+            </div>
+            <div class="gridcell-2">
+                <img class="noimage" src="https://cdn.1001.tl/images/artworks/default_100.png" alt="no image">
+            </div>
+            <div class="gridcell-3">
+                <div class="song">unknown</div>
+                <div class="artist">Tan House</div>
+            </div>
+            <div class="gridcell-4">
+                <div class="timestamp">26:10</div>
+            </div>
+            <div class="gridcell-5">
+                <div class="status">unreleased</div>
+            </div>
+        </div>
+        <!--Trypbox-->
+        <div class="grid-container">
+            <div class="gridcell-1">
+                <div class="index">20</div>
+            </div>
+            <div class="gridcell-2">
+                <img class="noimage" src="https://cdn.1001.tl/images/artworks/default_100.png" alt="no image">
+            </div>
+            <div class="gridcell-3">
+                <div class="song">unknown</div>
+                <div class="artist">Trypbox</div>
+            </div>
+            <div class="gridcell-4">
+                <div class="timestamp">27:50</div>
+            </div>
+            <div class="gridcell-5">
+                <div class="status">unreleased</div>
+            </div>
+        </div>
+        <!--XPNSV Taste-->
+        <div class="grid-container">
+            <div class="gridcell-1">
+                <div class="index">21</div>
+            </div>
+            <div class="gridcell-2">
+                <img class="noimage" src="https://cdn.1001.tl/images/artworks/default_100.png" alt="no image">
+            </div>
+            <div class="gridcell-3">
+                <div class="song">Tongue & Groove (Control Room Remix)</div>
+                <div class="artist">XPNSV TASTE</div>
+            </div>
+            <div class="gridcell-4">
+                <div class="timestamp">30:40</div>
+            </div>
+            <div class="gridcell-5">
+                <div class="status">released</div>
+            </div>
+        </div>
+        <!--Achilles-->
+        <div class="grid-container">
+            <div class="gridcell-1">
+                <div class="index">22</div>
+            </div>
+            <div class="gridcell-2">
+                <img class="noimage" src="https://cdn.1001.tl/images/artworks/default_100.png" alt="no image">
+            </div>
+            <div class="gridcell-3">
+                <div class="song">unknown</div>
+                <div class="artist">Achilles</div>
+            </div>
+            <div class="gridcell-4">
+                <div class="timestamp">32:10</div>
+            </div>
+            <div class="gridcell-5">
+                <div class="status">unreleased</div>
+            </div>
+        </div>
+        <!--Michael Sparks-->
+        <div class="grid-container">
+            <div class="gridcell-1">
+                <div class="index">23</div>
+            </div>
+            <div class="gridcell-2">
+                <img class="noimage" src="https://geo-media.beatport.com/image_size/300x300/d8136af2-0bb2-4157-a638-219665bcceec.jpg" alt="Michael Sparks">
+            </div>
+            <div class="gridcell-3">
+                <div class="song">Tell Me (SHAW & NETWERK Remix) [DO NOT DUPLICATE]</div>
+                <div class="artist">Michael Sparks</div>
+            </div>
+            <div class="gridcell-4">
+                <div class="timestamp">33:50</div>
+            </div>
+            <div class="gridcell-5">
+                <div class="status">released</div>
+            </div>
+        </div>
+        <!--Pretence-->
+        <div class="grid-container">
+            <div class="gridcell-1">
+                <div class="index">24</div>
+            </div>
+            <div class="gridcell-2">
+                <img class="noimage" src="https://cdn.1001.tl/images/artworks/default_100.png" alt="no image">
+            </div>
+            <div class="gridcell-3">
+                <div class="song">unknown</div>
+                <div class="artist">Pretence</div>
+            </div>
+            <div class="gridcell-4">
+                <div class="timestamp">35:30</div>
+            </div>
+            <div class="gridcell-5">
+                <div class="status">unreleased</div>
+            </div>
+        </div>
+        <!--Bodyrox ft. Luciana-->
+        <div class="grid-container">
+            <div class="gridcell-1">
+                <div class="index">25</div>
+            </div>
+            <div class="gridcell-2">
+                <img class="noimage" src="https://is1-ssl.mzstatic.com/image/thumb/Music5/v4/b5/a6/08/b5a60859-8e98-a159-afb8-a2fd26b2b7f0/8718274950670.jpg/300x300bb.jpg" alt="Bodyrox">
+            </div>
+            <div class="gridcell-3">
+                <div class="song">Yeah Yeah (Arundel Bootleg0 [ALTRA MODA]</div>
+                <div class="artist">Bodyrox ft. Luciana</div>
+            </div>
+            <div class="gridcell-4">
+                <div class="timestamp">36:50</div>
+            </div>
+            <div class="gridcell-5">
+                <div class="status">released</div>
+            </div>
+        </div>
+        <!--Houseium-->
+        <div class="grid-container">
+            <div class="gridcell-1">
+                <div class="index">26</div>
+            </div>
+            <div class="gridcell-2">
+                <img class="noimage" src="https://cdn.1001.tl/images/artworks/default_100.png" alt="no image">
+            </div>
+            <div class="gridcell-3">
+                <div class="song">unknown</div>
+                <div class="artist">Houseium</div>
+            </div>
+            <div class="gridcell-4">
+                <div class="timestamp">38:40</div>
+            </div>
+            <div class="gridcell-5">
+                <div class="status">unreleased</div>
+            </div>
+        </div>
+        <!--Kyogre & Trickshaw-->
+        <div class="grid-container">
+            <div class="gridcell-1">
+                <div class="index">27</div>
+            </div>
+            <div class="gridcell-2">
+                <img class="noimage" src="https://cdn.1001.tl/images/artworks/default_100.png" alt="no image">
+            </div>
+            <div class="gridcell-3">
+                <div class="song">unknown</div>
+                <div class="artist">Kyogre & Trickshaw</div>
+            </div>
+            <div class="gridcell-4">
+                <div class="timestamp">40:30</div>
+            </div>
+            <div class="gridcell-5">
+                <div class="status">unreleased</div>
+            </div>
+        </div>
+        <!--Prayer Handz-->
+        <div class="grid-container">
+            <div class="gridcell-1">
+                <div class="index">28</div>
+            </div>
+            <div class="gridcell-2">
+                <img class="noimage" src="https://cdn.1001.tl/images/artworks/default_100.png" alt="no image">
+            </div>
+            <div class="gridcell-3">
+                <div class="song">unknown</div>
+                <div class="artist">Prayer Handz</div>
+            </div>
+            <div class="gridcell-4">
+                <div class="timestamp">42:10</div>
+            </div>
+            <div class="gridcell-5">
+                <div class="status">unreleased</div>
+            </div>
+        </div>
+        <!--Chuck Shadow & Concourse & Dread MC-->
+        <div class="grid-container">
+            <div class="gridcell-1">
+                <div class="index">29</div>
+            </div>
+            <div class="gridcell-2">
+                <img class="noimage" src="https://cdn.1001.tl/images/artworks/default_100.png" alt="no image">
+            </div>
+            <div class="gridcell-3">
+                <div class="song">unknown</div>
+                <div class="artist">Chuck Shadow & Concourse & Dread MC</div>
+            </div>
+            <div class="gridcell-4">
+                <div class="timestamp">45:20</div>
+            </div>
+            <div class="gridcell-5">
+                <div class="status">unreleased</div>
+            </div>
+        </div>
+        <!--Doggo & GreyGhost-->
+        <div class="grid-container">
+            <div class="gridcell-1">
+                <div class="index">30</div>
+            </div>
+            <div class="gridcell-2">
+                <img class="noimage" src="https://cdn.1001.tl/images/artworks/default_100.png" alt="no image">
+            </div>
+            <div class="gridcell-3">
+                <div class="song">unknown</div>
+                <div class="artist">Doggo & GreyGhost</div>
+            </div>
+            <div class="gridcell-4">
+                <div class="timestamp">46:30</div>
+            </div>
+            <div class="gridcell-5">
+                <div class="status">unreleased</div>
+            </div>
+        </div>
+        <!--Neuro Dimension-->
+        <div class="grid-container">
+            <div class="gridcell-1">
+                <div class="index">31</div>
+            </div>
+            <div class="gridcell-2">
+                <img class="noimage" src="https://cdn.1001.tl/images/artworks/default_100.png" alt="no image">
+            </div>
+            <div class="gridcell-3">
+                <div class="song">unknown</div>
+                <div class="artist">Neuro Dimension</div>
+            </div>
+            <div class="gridcell-4">
+                <div class="timestamp">48:00</div>
+            </div>
+            <div class="gridcell-5">
+                <div class="status">unreleased</div>
+            </div>
+        </div>
+        <!--Proppa-->
+        <div class="grid-container">
+            <div class="gridcell-1">
+                <div class="index">32</div>
+            </div>
+            <div class="gridcell-2">
+                <img class="noimage" src="https://cdn.1001.tl/images/artworks/default_100.png" alt="no image">
+            </div>
+            <div class="gridcell-3">
+                <div class="song">unknown</div>
+                <div class="artist">Proppa</div>
+            </div>
+            <div class="gridcell-4">
+                <div class="timestamp">49:00</div>
+            </div>
+            <div class="gridcell-5">
+                <div class="status">unreleased</div>
+            </div>
+        </div>
+        <!--Yelit-->
+        <div class="grid-container">
+            <div class="gridcell-1">
+                <div class="index">33</div>
+            </div>
+            <div class="gridcell-2">
+                <img class="noimage" src="https://cdn.1001.tl/images/artworks/default_100.png" alt="no image">
+            </div>
+            <div class="gridcell-3">
+                <div class="song">unknown</div>
+                <div class="artist">Yelit</div>
+            </div>
+            <div class="gridcell-4">
+                <div class="timestamp">50:20</div>
+            </div>
+            <div class="gridcell-5">
+                <div class="status">unreleased</div>
+            </div>
+        </div>
+        <!--JØRD-->
+        <div class="grid-container">
+            <div class="gridcell-1">
+                <div class="index">34</div>
+            </div>
+            <div class="gridcell-2">
+                <img class="noimage" src="https://cdn.1001.tl/images/artworks/default_100.png" alt="no image">
+            </div>
+            <div class="gridcell-3">
+                <div class="song">unknown</div>
+                <div class="artist">JØRD</div>
+            </div>
+            <div class="gridcell-4">
+                <div class="timestamp">51:30</div>
+            </div>
+            <div class="gridcell-5">
+                <div class="status">unreleased</div>
+            </div>
+        </div>
+        <!--2 Below-->
+        <div class="grid-container">
+            <div class="gridcell-1">
+                <div class="index">35</div>
+            </div>
+            <div class="gridcell-2">
+                <img class="noimage" src="https://cdn.1001.tl/images/artworks/default_100.png" alt="no image">
+            </div>
+            <div class="gridcell-3">
+                <div class="song">unknown</div>
+                <div class="artist">2 Below</div>
+            </div>
+            <div class="gridcell-4">
+                <div class="timestamp">52:40</div>
+            </div>
+            <div class="gridcell-5">
+                <div class="status">unreleased</div>
+            </div>
+        </div>
+        <!--BVRRN-->
+        <div class="grid-container">
+            <div class="gridcell-1">
+                <div class="index">36</div>
+            </div>
+            <div class="gridcell-2">
+                <img class="noimage" src="https://cdn.1001.tl/images/artworks/default_100.png" alt="no image">
+            </div>
+            <div class="gridcell-3">
+                <div class="song">unknown</div>
+                <div class="artist">BVRRN</div>
+            </div>
+            <div class="gridcell-4">
+                <div class="timestamp">55:00</div>
+            </div>
+            <div class="gridcell-5">
+                <div class="status">unreleased</div>
+            </div>
+        </div>
+        <!--Devowr ft. AK Renny-->
+        <div class="grid-container">
+            <div class="gridcell-1">
+                <div class="index">37</div>
+            </div>
+            <div class="gridcell-2">
+                <img class="noimage" src="https://cdn.1001.tl/images/artworks/default_100.png" alt="no image">
+            </div>
+            <div class="gridcell-3">
+                <div class="song">unknown</div>
+                <div class="artist">Devowr ft. AK Renny</div>
+            </div>
+            <div class="gridcell-4">
+                <div class="timestamp">56:30</div>
+            </div>
+            <div class="gridcell-5">
+                <div class="status">unreleased</div>
+            </div>
+        </div>
+        <!--HeyDoc!-->
+        <div class="grid-container">
+            <div class="gridcell-1">
+                <div class="index">38</div>
+            </div>
+            <div class="gridcell-2">
+                <img class="noimage" src="https://cdn.1001.tl/images/artworks/default_100.png" alt="no image">
+            </div>
+            <div class="gridcell-3">
+                <div class="song">unknown</div>
+                <div class="artist">HeyDoc!</div>
+            </div>
+            <div class="gridcell-4">
+                <div class="timestamp">57:40</div>
+            </div>
+            <div class="gridcell-5">
+                <div class="status">unreleased</div>
+            </div>
+        </div>
+        <!--Bazz Maze-->
+        <div class="grid-container">
+            <div class="gridcell-1">
+                <div class="index">33</div>
+            </div>
+            <div class="gridcell-2">
+                <img class="noimage" src="https://cdn.1001.tl/images/artworks/default_100.png" alt="no image">
+            </div>
+            <div class="gridcell-3">
+                <div class="song">unknown</div>
+                <div class="artist">Bazz Maze</div>
+            </div>
+            <div class="gridcell-4">
+                <div class="timestamp">58:30</div>
+            </div>
+            <div class="gridcell-5">
+                <div class="status">unreleased</div>
+            </div>
+        </div>
+        <!--Dexterr-->
+        <div class="grid-container">
+            <div class="gridcell-1">
+                <div class="index">40</div>
+            </div>
+            <div class="gridcell-2">
+                <img class="noimage" src="https://cdn.1001.tl/images/artworks/default_100.png" alt="no image">
+            </div>
+            <div class="gridcell-3">
+                <div class="song">unknown</div>
+                <div class="artist">Dexterr</div>
+            </div>
+            <div class="gridcell-4">
+                <div class="timestamp">59:20</div>
+            </div>
+            <div class="gridcell-5">
+                <div class="status">unreleased</div>
+            </div>
+        </div>
+
+
+        
+
+
+        
+
+        
+    </div>
+   
+
+    
+      
+      
 </body>
 </html>
