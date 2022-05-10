@@ -5,15 +5,13 @@
   }
 * {
     color: var(--fontColor);
-    font-family: helvetica;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    overflow-x: hidden;
   }
 body {
       background: var(--bg);
+      border-radius: 25px;
   }
-
-ul {
-    font-family: 'Times New Roman', Times, serif;
-}
   
 .dark-theme {
     --bg: var(--blue);
@@ -28,19 +26,20 @@ ul {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  height: 100vh;
+  height: 100%;
   width: 100%;
   position: relative;
   padding-top: 20px;
 }
 #msg {
-  text-decoration: underline;
+  color:white;
+  padding-left: 10px;
 }
 .logo {
   height: 40px;
   width: 150px;
-  
   position: relative;
+  padding-left: 10px;
 }
 
 .logoicon {
@@ -64,39 +63,63 @@ ul {
 }
 
 h2 {
-  font-family: Arial, Helvetica, sans-serif;
+  color:white;
+  padding-left: 10px;
 }
-.row {
-  padding: 15px;
+.heading {
+  display: grid;
+  grid-template-columns: [index] 3% [image] 5% [info] 42% [timestamp] 25% [links] 25%;
+  column-gap: 16px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left:20px;
+  margin-right: 20px;
+  margin-bottom: 5px;
+
+
+}
+.rows {
+  border-radius: 35px;
+  margin-left:20px;
+  margin-right: 20px;
   display: grid;
   grid-template-columns: none;
-  grid-template-rows: [firstrow] 25% [secondrow] 25%;
-
-
     
 }
+
 .grid-container {
   display: grid;
-  grid-template-columns: [index] 16px [image] 80px [info] 40% [timestamp] 30% [links] 30%;
-  grid-template-rows: [firstrow] 25% [secondrow] 25%;
+  grid-template-columns: [index] 3% [image] 5% [info] 42% [timestamp] 25% [links] 25%;
   column-gap: 16px;
-  padding-left: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: rgba(79, 137, 213, 0.324);
+  border-color: #000000;
+  color:white;
+  font-size: medium;
+
+
 
 }
 
 .gridcell-1 {
   display:flex;
+  overflow-y: hidden;
 }
+.gridcell-3{
+  overflow-y: hidden;
+}
+
 .header {
   font-size: 13px;
   color: lightgray;
-  text-decoration: underline;
 
 }
 .index {
   float:left;
   text-align: center;
   position:relative; top: 27px;
+  padding-left:15px;
 }
 .noimage {
   border-radius: 7px;
@@ -109,6 +132,7 @@ h2 {
   justify-self: start;
   font-size: 15px;
   position:relative; top: 15px;
+  overflow-y:hidden;
 
 }
 .artist {
@@ -116,6 +140,7 @@ h2 {
     height: 50px ;
     font-size: 13px;
     position:relative; top: 15px;
+    overflow-y: hidden;
 }
 .timestamp {
   position:relative; top: 15px;
@@ -145,11 +170,13 @@ bold {
   justify-content: left;
 }
 .openButton {
-  border: none;
+  border: .5px black;
+  border-style: solid;
   border-radius: 5px;
-  background-color: #000000;
+  background-color: #5384bb6b;
   color: rgb(255, 255, 255);
-  padding: 14px 20px;
+  height: 35px; 
+  width: 80px;
   cursor: pointer;
   position: relative;
 }
