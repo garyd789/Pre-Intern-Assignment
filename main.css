@@ -65,6 +65,11 @@ body {
 h2 {
   color:white;
   padding-left: 10px;
+  border-radius: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-style: italic;
+
 }
 .heading {
   display: grid;
@@ -173,7 +178,18 @@ bold {
   border: .5px black;
   border-style: solid;
   border-radius: 5px;
-  background-color: #5384bb6b;
+  background-color: rgba(79, 137, 213, 0.25);
+  color: rgb(255, 255, 255);
+  height: 35px; 
+  width: 80px;
+  cursor: pointer;
+  position: relative;
+}
+.listenButton {
+  border: .5px black;
+  border-style: solid;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.388);
   color: rgb(255, 255, 255);
   height: 35px; 
   width: 80px;
