@@ -1,5 +1,4 @@
 :root {
-    --green: #00FF00;
     --white: #ffffff;
     --blue: #154285;
   }
@@ -31,6 +30,8 @@ body {
   position: relative;
   padding-top: 20px;
 }
+
+/* CSS FOR TITLE, LOGO AND HEADER*/
 #msg {
   color:white;
   padding-left: 10px;
@@ -83,6 +84,10 @@ h2 {
 
 
 }
+
+
+/* CSS FOR THE BODY AND THE SET UP OF THE GRID */
+
 .rows {
   border-radius: 35px;
   margin-left:20px;
@@ -132,7 +137,7 @@ h2 {
   position:relative; top: 27px;
   padding-left:15px;
 }
-.noimage {
+.image {
   border-radius: 7px;
   height: 80px;
   width: 80px;
