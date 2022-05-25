@@ -98,12 +98,11 @@ h2 {
   column-gap: 16px;
   padding-left: 15px;
   padding-right: 15px;
+  padding-bottom: 20px;
   background-color: rgba(79, 137, 213, 0.324);
   border-color: #000000;
   color:white;
   font-size: medium;
-
-
 
 }
 
@@ -112,7 +111,14 @@ h2 {
   overflow-y: hidden;
 }
 .gridcell-3{
+  position: relative; top: 8px;
   overflow-y: hidden;
+}
+.gridcell-4{
+  position: relative; top: 8px;
+}
+.gridcell-5{
+  position: relative; top: 8px;
 }
 
 .header {
@@ -128,8 +134,8 @@ h2 {
 }
 .noimage {
   border-radius: 7px;
-  height: 70px;
-  width: 70px;
+  height: 80px;
+  width: 80px;
   justify-content: center;
   align-items: center;
 }
